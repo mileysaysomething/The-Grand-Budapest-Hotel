@@ -1,0 +1,33 @@
+.banner-container {
+  position: relative;
+  height: 600px;
+  background-image: url(../images/Banner/Banner_BG_Blur.png);
+  background-width: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.banner-title {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  margin-top: -50px;
+  background-image: url(../images/Banner/Banner_Title.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-cast {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  margin-top: -50px;
+  background-image: url(../images/Banner/Banner_Cast0.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=main.css.map */
