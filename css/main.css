@@ -1,9 +1,8 @@
 .banner-container {
   position: relative;
-  height: 600px;
+  height: 500px;
   background-image: url(../images/Banner/Banner_BG_Blur.png);
-  background-width: 100%;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
@@ -25,9 +24,25 @@
   width: 100%;
   position: absolute;
   top: 30%;
-  margin-top: -50px;
+  margin-top: -10px;
   background-image: url(../images/Banner/Banner_Cast0.png);
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+.col-sm {
+  margin-bottom: 30px;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.col-sm.isShowing {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 /*# sourceMappingURL=main.css.map */

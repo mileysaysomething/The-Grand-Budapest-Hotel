@@ -3,12 +3,11 @@
 
 .banner-container
     position: relative
-    height: 600px
+    height: 500px
     background: 
         image: url(../images/Banner/Banner_BG_Blur.png)
         //size: contain
-        width: 100%
-        position: top center
+        position:  center
         repeat: no-repeat
         attachment: fixed
     overflow: hidden
@@ -29,12 +28,23 @@
     width: 100%
     position: absolute
     top: 30%
-    margin-top: -50px
+    margin-top: -10px
     background:
         image: url(../images/Banner/Banner_Cast0.png)
         position: bottom
         repeat: no-repeat
 
+
+.col-sm
+    margin-bottom: 30px
+    position: relative 
+    opacity: 0
+    transform: translateX(-20px)
+    transition: all 0.3s ease-in-out
+
+    &.isShowing
+        opacity: 1
+        transform: translateX(0px)
 
 
 
