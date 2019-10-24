@@ -10,14 +10,15 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
   <!----------------- Nav Bar------------------->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">GB</a>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
+    <a class="navbar-brand"  href="index.html">GB</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,24 +35,22 @@
           <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-      <form class="form-inline mt-2 mt-md-0">
+      <form  class="form-inline mt-2 mt-md-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <button class="btn btn-warning" type="submit">Search</button>
       </form>
     </div>
   </nav>
   <!----------------- Banner ------------------->
-  <header class="banner-container">
-    <div class="banner-bg"></div>
+  <div class="banner-container">
     <div class="banner-title"></div>
     <div class="banner-cast"></div>
-  </header>
-
+  </div>
   <div class="content">
-  <!----------------- Cast Grid ------------------->
+    <!----------------- Cast Grid ------------------->
     <div class="container">
-      <h1>Casts</h1>
-      
+      <h1 class="animated infinite bounce ">Casts</h1>
+
       <div class="row">
         <div class="col-sm">
 
@@ -89,62 +88,56 @@
 
     <!----------------- Director ------------------->
     <div class="directorDiv">
-      <h1>Director</h1>
-      
+      <h1 class="directorTitle">Director</h1>
       <div class="director">
         <img class="camera" src="images/Director/CameraFixed.png">
-       
-           
-          
-          
-          
-        </div>
-        <blockquote class="blockquote text-center">
-            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer"> <cite title="Source Title">Wes Anderson</cite></footer>
-          </blockquote>
-          <p class="mb-1">Lorem ipsum dolor sit amet, <mark> adipiscing elit</mark>. Donec hendrerit auctor metus, dapibus
-            ultricies
-            nunc sodales sed. Nunc enim nunc, tincidunt <mark>vitae pharetra</mark> sagittis, dignissim a lorem.
-            Nullam vitae cursus purus.<mark> Suspendisse sed porttitor justo, et laoreet lorem.</mark>
-          </p>
       </div>
-    
-</div>
+      <blockquote class="blockquote text-center">
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer"> <cite title="Source Title">Wes Anderson</cite></footer>
+      </blockquote>
+      <p class="mb-1">Lorem ipsum dolor sit amet, <mark> adipiscing elit</mark>. Donec hendrerit auctor metus, dapibus
+        ultricies
+        nunc sodales sed. Nunc enim nunc, tincidunt <mark>vitae pharetra</mark> sagittis, dignissim a lorem.
+        Nullam vitae cursus purus.<mark> Suspendisse sed porttitor justo, et laoreet lorem.</mark>
+      </p>
+    </div>
+    <h1 class="thanks">Thank You ● ◡ ●</hi>
+  </div> 
   <!----------------- Footer ------------------->
-  
-<div class="footerDiv">
 
-  <div class="row footerInfo">
-    <div class="col-3"><strong>FIND US ON</strong>
-      <ul>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Instagram</a></li>
-      </ul>
+  <div class="footerDiv">
+
+    <div class="row footerInfo">
+      <div class="col-3"><strong>FIND US ON</strong>
+        <ul>
+          <li><img src="images/Icons/Twitter.png"><a href="">Twitter</a></li>
+          <li><img src="images/Icons/Facebook.png"><a href="">Facebook</a></li>
+          <li><img src="images/Icons/Instagram.png"><a href="">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-3"><strong>OTHER MOVIES</strong>
+        <ul>
+          <li><a href="">Ilse of Dogs</a></li>
+          <li><a href="">Moonrise Kingdom</a></li>
+          <li><a href="">The Darijeeling Limited</a></li>
+          <li><a href="">Rushmore</a></li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <p><strong>Sign Up for the newsletter</strong>
+          <form class="row">
+            <div class="col-6">
+              <input type="email" class="form-control" placeholder="Enter Your Email...">
+            </div>
+            <div class="col-4">
+              <input type="submit" class="btn btn-light">
+            </div>
+          </form>
+      </div>
     </div>
-    <div class="col-3"><strong>OTHER MOVIES</strong>
-      <ul>
-        <li><a href="">Ilse of Dogs</a></li>
-        <li><a href="">Moonrise Kingdom</a></li>
-        <li><a href="">The Darijeeling Limited</a></li>
-        <li><a href="">Rushmore</a></li>
-      </ul>
-    </div>
-    <div class="col-6">
-      <p><strong>Sign Up for the newsletter</strong> 
-      <form class="row">
-        <div class="columns eight">
-          <input type="email" class="form-control" placeholder="Enter Your Email..." >
-        </div>
-        <div class="columns four">
-          <input type="submit" class="btn btn-primary">
-        </div>
-      </form>
-    </div>
+
   </div>
-
-</div>
 
   <script src="functions.js"></script>
 </body>

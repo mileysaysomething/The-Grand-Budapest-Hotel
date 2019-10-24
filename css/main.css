@@ -1,6 +1,27 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+}
+
+h1 {
+  color: #000000;
+}
+
+.nav-item:hover {
+  background: #F5A623;
+  border-radius: 25%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-warning {
+  color: #000000;
+  font: #F5A623;
+}
+
 .banner-container {
   position: relative;
-  height: 500px;
+  height: 100vh;
   background-image: url(../images/Banner/Banner_BG_Blur.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -24,7 +45,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 30%;
+  top: 35%;
   margin-top: -10px;
   background-image: url(../images/Banner/Banner_Cast0.png);
   background-position: bottom;
@@ -90,14 +111,73 @@
   display: block;
 }
 
+.directorTitle {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .camera {
   margin-top: -100px;
   margin-left: -45%;
   height: auto;
 }
 
+.thanks {
+  margin-left: 30%;
+  color: #F5A623;
+  font-size: 4rem;
+  border-right: 4px solid #000000;
+  white-space: nowrap;
+  -webkit-animation: type 3s steps(15) infinite;
+          animation: type 3s steps(15) infinite;
+  overflow: hidden;
+  width: 15ch;
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 15ch;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 15ch;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .footerDiv {
-  background: #F3A19E;
+  background: #E8ADB7;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -108,5 +188,27 @@
   margin: 2% auto;
   color: #ffffff;
   width: 100%;
+}
+
+.footerInfo ul {
+  list-style-type: none;
+}
+
+.footerInfo li {
+  padding-top: 0.2rem;
+}
+
+.footerInfo a {
+  padding-left: 1rem;
+  color: #FFFFFF;
+}
+
+.footerInfo form {
+  padding-left: 2rem;
+}
+
+.footerInfo strong {
+  color: #000000;
+  padding-left: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

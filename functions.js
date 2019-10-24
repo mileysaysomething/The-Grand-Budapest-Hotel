@@ -5,6 +5,12 @@ $(window).scroll(function () {
 
     var scroll = $(this).scrollTop();
 
+    /* ------------------------------ Nav Bar ---------------------------- */
+    if(scroll > 600 ){
+        document.getElementById("navbar").style.background = "#E8ADB7";
+    }else{
+        document.getElementById("navbar").style.background = null;
+    }
     /* ------------------------------ Banner ---------------------------- */
 
     //Mid layer
