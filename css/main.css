@@ -38,11 +38,51 @@
           transform: translateX(-20px);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.col-sm figcaption {
+  bottom: -100%;
+  color: #000000;
+  background: #F3A19E;
+  position: absolute;
+  font-size: 1.5rem;
+}
+
+.col-sm:hover img {
+  display: block;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.col-sm:hover figcaption {
+  bottom: 0%;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .col-sm.isShowing {
   opacity: 1;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
+}
+
+.director {
+  margin-left: 33%;
+  margin-top: 100px;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-image: url(../images/Director/WesAnderson.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.camera {
+  margin-top: -100px;
+  margin-left: -45%;
 }
 /*# sourceMappingURL=main.css.map */

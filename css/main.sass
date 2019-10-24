@@ -1,5 +1,5 @@
 
-//Parallax
+//---------------------- Parallax Banner -----------------------
 
 .banner-container
     position: relative
@@ -34,19 +34,54 @@
         position: bottom
         repeat: no-repeat
 
-
+//---------------------- Cast Grid -----------------------
 .col-sm
     margin-bottom: 30px
     position: relative 
     opacity: 0
     transform: translateX(-20px)
     transition: all 0.3s ease-in-out
+    overflow: hidden
+
+    figcaption
+      bottom: -100%
+      color: #000000
+      background: #F3A19E
+      position: absolute 
+      font-size: 1.5rem
+      
+
+    &:hover
+        img
+            display: block
+            transform: scale(1.2)
+            transition: all 0.3s ease-in-out
+        figcaption
+            bottom: 0%
+            transition: all 0.35s ease-in-out
 
     &.isShowing
         opacity: 1
         transform: translateX(0px)
 
+//---------------------- Direcoter -----------------------
 
+.director
+    margin-left: 33% //center
+    margin-top: 100px
+    height: 400px
+    width: 400px
+    border-radius: 50%
+    background: 
+        image: url(../images/Director/WesAnderson.jpg)
+        position: top center
+        repeat: no-repeat
+        attachment: fixed
+
+.camera
+    margin-top: -100px
+    margin-left:  -45%
+    
 
 
 
