@@ -4,9 +4,14 @@
 body
   font-family: "Open Sans", sans-serif
   color: #000000
+  position: center
 
 h1
   color: #000000
+  margin-left: 10%
+  font-family: 'Audiowide', cursive;
+
+  
 
 //---------------------- Nav Bar -----------------------
 
@@ -108,7 +113,10 @@ h1
         repeat: no-repeat
         attachment: fixed
     display: block
-
+.mb-0
+    margin-top: 5%
+    mark
+        background-color:#e9959563
 .directorTitle 
     animation: pulse
     animation-duration: 1s
@@ -122,19 +130,21 @@ h1
 
 .thanks
     margin-left: 30%
+    margin-top: 5%
+    margin-bottom: 2%
     color:#F5A623
     font-size: 4rem
     border-right: 4px solid #000000
     white-space: nowrap
-    animation: type 3s steps(15) infinite 
+    animation: type 2s steps(15) infinite 
     overflow: hidden
-    width: 15ch
+    width: 12ch
 @keyframes type
     0%
         width: 0ch
         
     100%
-        width: 15ch
+        width: 12ch
 
 @keyframes blink
     0%
@@ -152,11 +162,16 @@ h1
     bottom: 0
     width: 100%
     top: 75%
- 
+
+.blockquote
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem
+
 .footerInfo
     margin: 2% auto
     color:#ffffff
     width: 100%
+    
 
     ul
         list-style-type: none
