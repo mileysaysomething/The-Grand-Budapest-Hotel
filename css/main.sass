@@ -6,11 +6,12 @@
     height: 500px
     background: 
         image: url(../images/Banner/Banner_BG_Blur.png)
-        //size: contain
         position:  center
         repeat: no-repeat
         attachment: fixed
+       
     overflow: hidden
+    z-index: 3
 
 .banner-title
     height: 300px
@@ -34,6 +35,11 @@
         position: bottom
         repeat: no-repeat
 
+.content
+    position: relative
+    z-index: 2
+    background: #ffffff
+    margin-bottom: 300px
 //---------------------- Cast Grid -----------------------
 .col-sm
     margin-bottom: 30px
@@ -55,10 +61,10 @@
         img
             display: block
             transform: scale(1.2)
-            transition: all 0.3s ease-in-out
+            transition: all 0.2s ease-in-out
         figcaption
             bottom: 0%
-            transition: all 0.35s ease-in-out
+            transition: all 0.3s ease-in-out
 
     &.isShowing
         opacity: 1
@@ -77,12 +83,29 @@
         position: top center
         repeat: no-repeat
         attachment: fixed
+    display: block
 
 .camera
     margin-top: -100px
     margin-left:  -45%
-    
-
+   
+    height: auto
+     
+   
+//---------------------- Footer -----------------------   
+.footerDiv
+   
+    background:#F3A19E
+    position: fixed
+    bottom: 0
+    width: 100%
+    top: 75%
+ 
+.footerInfo
+    margin: 2% auto
+    color:#ffffff
+    width: 100%
+      
 
 
     
